@@ -1,0 +1,142 @@
+body{
+    background-color: #092327; 
+    color: #C7E7FF;
+    font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;  
+    text-align: center;
+}
+
+h1{
+    color: #4E8098;
+}
+
+.nav-div{
+    width: 100%;
+    display: inline-block;
+    margin-top: calc((0.3172270099842354*100vw) - 130px);
+}
+
+nav{
+    margin: 27px auto 0;
+    position: relative;
+    width: 590px;
+    height: 50px;
+    background-color: #0B5351;
+    border-radius: 8px;
+    font-size: 0;
+}
+
+nav a{
+    line-height: 50px;
+    height: 100%;
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: #C7E7FF;
+    cursor: pointer;
+}
+
+nav a:hover{
+    border-bottom-style: solid;
+    border-bottom-color: #C7E7FF;
+    border-bottom-width: 10px;
+}
+
+nav.animation{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all .5s ease 0s;
+    border-radius: 8px;
+    background-color: #00A9A5;
+}
+.nav-link {
+    width: 33.3333%;
+    border-radius: 8px;
+
+}
+
+.top-img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    margin: 0px;
+    
+    width: 100%;
+    height: auto;
+}
+
+input#searchBar{
+    margin-top: calc((0.3172270099842354*100vw) - 100px);
+    position: absolute;
+    z-index: 1;
+    float: left;
+    background-color: #092327;
+    color: lightgray;
+    border-radius: 8px;
+    border-color: #C7E7FF;
+
+    background-image: url(/images/search.png);
+    background-repeat: no-repeat;
+    text-indent: 20px;
+}
+
+.c00A9A5{
+    background-color: #00A9A5;
+    color: #092327;
+}
+
+.c0B5351{
+    background-color: #0B5351;
+}
+
+.tidspunkt{
+    text-align: left;
+    font-size: xx-small;
+}
+
+.FAQ{
+    list-style: none;
+}
+
+
+.faq-question{
+    width: 100%;
+    margin: 0px;
+    display: block;
+    background-color: #0B5351;
+    border-bottom-style: solid;
+    border-color: #092327;
+    line-height: 100px;
+    min-height: 100px;
+    cursor: pointer;
+}
+
+.faq-question:hover{
+    background-color:#00A9A5
+}
+
+.faq-answer{
+    display: none;
+    min-height: 100px;
+    height: auto;
+    background-color:#4E8098;
+    color: #092327;
+    text-align: left;
+}
+
+.kontaktMetode{
+    width: 50%;
+    display: inline-block;
+    float: left;
+}
+
+.container-searcheble{
+    text-align: left;
+    padding-left: 10px;
+}
