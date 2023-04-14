@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt oss</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <img class="top-img" src="./images/kontakt.jpg" alt="Bilde av skolen">
@@ -16,6 +17,9 @@
           <a class="nav-link" href="./Personvern.html">Personvern</a>
         </nav>
       </div>
+
+
+
       <div id="FAQ">
         <h1>FAQ</h1>
         <p>Før du koontakter oss for å stille spårsmål ber vi deg om å se igjennom våres FAQ for å se om den svarer på spørsmålet ditt</p>
@@ -32,44 +36,69 @@
           </li>
           <li class="faq-item">
             <div class="faq-question" id="faq-question2">
-              Question 2
+              Hvor ligger Olonkinbyen VGS?
             </div>
             <div class="faq-answer" id="faq-answer2">
-              Answer 2
+              Olonkinbyen VGS ligger sentralt i olinkinbyen på jan mayen øyen. Dette er en litten øy midt i atlanterhavet. Olonkinben VGS er den eneste skolen på øyen.
             </div>
           </li>
           <li class="faq-item">
             <div class="faq-question" id="faq-question3">
-              Question 3
+              Hva slags tilbud om skolemat har dere?
             </div>
             <div class="faq-answer" id="faq-answer3">
-              Answer 3
+              Vi har en kantine på skolen hvor det serveres gratis skolefrokost hver dag, og varm lunsj Mandag, onsdag og fredag.
+              i tilleg selger bi noe forsjelig kald mat som f.eks boler, sandwitcher og et utvalg av drikker gjennom hele skoledagen.
             </div>
           </li>
           <li class="faq-item">
             <div class="faq-question" id="faq-question4">
-              Question 4
+              Hvor gamel er olonkinbyen vgs?
             </div>
             <div class="faq-answer" id="faq-answer4">
-              Answer 4
+              Olonkinbyen vgs er en relativt ny skole da den ble ferdig bygget 10.04.2022, og Åpnet for første semester i august same året.
             </div>
           </li>
           <li class="faq-item">
             <div class="faq-question" id="faq-question5">
-              Question 5
+              Hvor stor er skolen?
             </div>
             <div class="faq-answer" id="faq-answer5">
-              Answer 5
+              Ettersom det ikke bor så mangen på jan mayen trengs det ikke en veldig stor skole. Skolen har for øyeblikke bare 13 elever og 20 lærere, 
+              men vi er klar for at dette tallet øker da vi har 10 klasserom med plass til 20 elever i hver og en gymsal med plass til en klasse.
             </div>
           </li>
         </ul>
     </div>
 
+    <div class="container-searcheble">
+      <div id="zammad-feedback-form">form will be placed in here</div>
+    </div>
+    <script id="zammad_form_script" src="https://zammad.if11.xyz/assets/form/form.js"></script>
+
+    <script>
+    $(function() {
+      $('#zammad-feedback-form').ZammadForm({
+        messageTitle: 'Feedback Form',
+        messageSubmit: 'Submit',
+        messageThankYou: 'Thank you for your inquiry (#%s)! We\'ll contact you as soon as possible.',
+        showTitle: true,
+        attachmentSupport: true
+      });
+    });
+  </script>
+
+<div id="feedbackForm">
+  <h4>Hvis du har noen tilbakemeldinger om siden vile vi sat stor pris på om du svarte på denne <a href="https://docs.google.com/forms/d/e/1FAIpQLSd392QDpDLs7OY_i3rNaEy8cmkgEv4IiuDYcnh6oEixIFfbSw/viewform?usp=sf_link  " target="_blank">undersøkelsen</a></h4>
+</div>
+
     <div id="kontaktMetoder">
-      <h1>kontakt metoder</h1>
-      <h4 class="kontaktMetode"><a href="mailto:simien.mosland@gmail.com" target="_blank">  Email</a></h4>
+      <h1>Andre kontakt metoder</h1>
+      <h4 class="kontaktMetode"><a href="mailto:simien.mosland@gmail.com" target="_blank">Email</a></h4>
       <h4 class="kontaktMetode">Jan Mayen Veien 40, 8099 Svalbard og Jan Mayen<br>kordinater: 51.13026274064064, 4.205555765775272</h4>
     </div>
+
+    
     <script src="./js/index.js"></script>
     <!-- Start of HubSpot Embed Code -->
   <script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/27153257.js"></script>

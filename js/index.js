@@ -2,13 +2,7 @@ let searchBar = document.getElementById("searchBar");
 if(searchBar){
     searchBar.addEventListener("keyup", search)
 }
-if(location.href.includes("KontaktSide")){
-    questions = document.getElementsByClassName("faq-question");
-    for(let i=0; i<questions.length; i++){
-        let question = questions[i];
-        question.addEventListener("click", openFAQ);
-    }
-}
+
 
 function search(){
     console.log(searchBar);
@@ -31,6 +25,15 @@ function search(){
         arragemaentTittle.style.display= "block"
     }else if(arragemaentTittle){
         arragemaentTittle.style.display= "none"
+    }
+}
+
+
+if(location.href.includes("KontaktSide")){
+    questions = document.getElementsByClassName("faq-question");
+    for(let i=0; i<questions.length; i++){
+        let question = questions[i];
+        question.addEventListener("click", openFAQ);
     }
 }
 
